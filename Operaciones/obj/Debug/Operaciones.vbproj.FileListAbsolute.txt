@@ -1,0 +1,32 @@
+c:\users\ameli\documents\visual studio 2015\Projects\Operaciones\Operaciones\bin\Debug\Operaciones.exe.config
+c:\users\ameli\documents\visual studio 2015\Projects\Operaciones\Operaciones\obj\Debug\Operaciones.vbprojResolveAssemblyReference.cache
+c:\users\ameli\documents\visual studio 2015\Projects\Operaciones\Operaciones\obj\Debug\Operaciones.Inicio.resources
+c:\users\ameli\documents\visual studio 2015\Projects\Operaciones\Operaciones\obj\Debug\Operaciones.Resources.resources
+c:\users\ameli\documents\visual studio 2015\Projects\Operaciones\Operaciones\obj\Debug\Operaciones.vbproj.GenerateResource.Cache
+c:\users\ameli\documents\visual studio 2015\Projects\Operaciones\Operaciones\obj\Debug\Operaciones.xml
+c:\users\ameli\documents\visual studio 2015\Projects\Operaciones\Operaciones\bin\Debug\Operaciones.exe
+c:\users\ameli\documents\visual studio 2015\Projects\Operaciones\Operaciones\bin\Debug\Operaciones.pdb
+c:\users\ameli\documents\visual studio 2015\Projects\Operaciones\Operaciones\bin\Debug\Operaciones.xml
+c:\users\ameli\documents\visual studio 2015\Projects\Operaciones\Operaciones\obj\Debug\Operaciones.exe
+c:\users\ameli\documents\visual studio 2015\Projects\Operaciones\Operaciones\obj\Debug\Operaciones.pdb
+C:\Users\Ameli\documents\visual studio 2015\Projects\Operaciones\Operaciones\obj\Debug\Operaciones.Conductividad.resources
+C:\Users\Ameli\documents\visual studio 2015\Projects\Operaciones\Operaciones\obj\Debug\Operaciones.Calor_Autor.resources
+C:\Users\Ameli\documents\visual studio 2015\Projects\Operaciones\Operaciones\obj\Debug\Operaciones.Calor_TipoProducto.resources
+C:\Users\Ameli\documents\visual studio 2015\Projects\Operaciones\Operaciones\obj\Debug\Operaciones.Calor_componente.resources
+C:\Users\Ameli\documents\visual studio 2015\Projects\Operaciones\Operaciones\obj\Debug\Operaciones.Ecuacion_CalorComponente.resources
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\bin\Debug\Operaciones.exe.config
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Debug\Operaciones.exe
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Debug\Operaciones.xml
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Debug\Operaciones.pdb
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\bin\Debug\Operaciones.exe
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\bin\Debug\Operaciones.pdb
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\bin\Debug\Operaciones.xml
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Debug\Operaciones.vbprojResolveAssemblyReference.cache
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Debug\Operaciones.Calor_Autor.resources
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Debug\Operaciones.Calor_Componente.resources
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Debug\Operaciones.Calor_TipoProducto.resources
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Debug\Operaciones.Conductividad.resources
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Debug\Operaciones.Ecuacion_CalorComponente.resources
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Debug\Operaciones.Inicio.resources
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Debug\Operaciones.Resources.resources
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Debug\Operaciones.vbproj.GenerateResource.Cache
