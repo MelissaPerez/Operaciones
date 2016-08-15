@@ -23,17 +23,17 @@ Partial Class Ecuacion_CalorComponente
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.temp = New System.Windows.Forms.TextBox()
+        Me.txtTemperatura = New System.Windows.Forms.TextBox()
         Me.Panel_ecuacion_param = New System.Windows.Forms.Panel()
         Me.Btn_calcular_ecuacion = New System.Windows.Forms.Button()
         Me.x = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtResultado = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnVolver = New System.Windows.Forms.Button()
         Me.Foto_Ecuacion = New System.Windows.Forms.PictureBox()
         Me.Panel_foto_ecuacion = New System.Windows.Forms.Panel()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnSalir = New System.Windows.Forms.Button()
         Me.Panel_ecuacion_param.SuspendLayout()
         Me.x.SuspendLayout()
         CType(Me.Foto_Ecuacion, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -49,21 +49,21 @@ Partial Class Ecuacion_CalorComponente
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Temperatura (°C)"
         '
-        'temp
+        'txtTemperatura
         '
-        Me.temp.Location = New System.Drawing.Point(131, 13)
-        Me.temp.Name = "temp"
-        Me.temp.Size = New System.Drawing.Size(100, 20)
-        Me.temp.TabIndex = 3
+        Me.txtTemperatura.Location = New System.Drawing.Point(131, 13)
+        Me.txtTemperatura.Name = "txtTemperatura"
+        Me.txtTemperatura.Size = New System.Drawing.Size(100, 20)
+        Me.txtTemperatura.TabIndex = 3
         '
         'Panel_ecuacion_param
         '
         Me.Panel_ecuacion_param.Controls.Add(Me.Btn_calcular_ecuacion)
         Me.Panel_ecuacion_param.Controls.Add(Me.Label1)
-        Me.Panel_ecuacion_param.Controls.Add(Me.temp)
+        Me.Panel_ecuacion_param.Controls.Add(Me.txtTemperatura)
         Me.Panel_ecuacion_param.Location = New System.Drawing.Point(12, 94)
         Me.Panel_ecuacion_param.Name = "Panel_ecuacion_param"
-        Me.Panel_ecuacion_param.Size = New System.Drawing.Size(381, 51)
+        Me.Panel_ecuacion_param.Size = New System.Drawing.Size(385, 51)
         Me.Panel_ecuacion_param.TabIndex = 5
         '
         'Btn_calcular_ecuacion
@@ -82,7 +82,7 @@ Partial Class Ecuacion_CalorComponente
         Me.x.Controls.Add(Me.Label3)
         Me.x.Location = New System.Drawing.Point(12, 151)
         Me.x.Name = "x"
-        Me.x.Size = New System.Drawing.Size(381, 54)
+        Me.x.Size = New System.Drawing.Size(385, 54)
         Me.x.TabIndex = 6
         '
         'Label2
@@ -111,14 +111,14 @@ Partial Class Ecuacion_CalorComponente
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Resultado"
         '
-        'Button1
+        'btnVolver
         '
-        Me.Button1.Location = New System.Drawing.Point(418, 110)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Volver"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnVolver.Location = New System.Drawing.Point(418, 110)
+        Me.btnVolver.Name = "btnVolver"
+        Me.btnVolver.Size = New System.Drawing.Size(75, 23)
+        Me.btnVolver.TabIndex = 2
+        Me.btnVolver.Text = "Volver"
+        Me.btnVolver.UseVisualStyleBackColor = True
         '
         'Foto_Ecuacion
         '
@@ -136,22 +136,22 @@ Partial Class Ecuacion_CalorComponente
         Me.Panel_foto_ecuacion.Size = New System.Drawing.Size(385, 76)
         Me.Panel_foto_ecuacion.TabIndex = 8
         '
-        'Button2
+        'btnSalir
         '
-        Me.Button2.Location = New System.Drawing.Point(418, 166)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 9
-        Me.Button2.Text = "Salir"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnSalir.Location = New System.Drawing.Point(418, 166)
+        Me.btnSalir.Name = "btnSalir"
+        Me.btnSalir.Size = New System.Drawing.Size(75, 23)
+        Me.btnSalir.TabIndex = 9
+        Me.btnSalir.Text = "Salir"
+        Me.btnSalir.UseVisualStyleBackColor = True
         '
         'Ecuacion_CalorComponente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(508, 223)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnSalir)
+        Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.Panel_foto_ecuacion)
         Me.Controls.Add(Me.x)
         Me.Controls.Add(Me.Panel_ecuacion_param)
@@ -167,7 +167,7 @@ Partial Class Ecuacion_CalorComponente
 
     End Sub
     Friend WithEvents Label1 As Label
-    Friend WithEvents temp As TextBox
+    Friend WithEvents txtTemperatura As TextBox
     Friend WithEvents Panel_ecuacion_param As Panel
     Friend WithEvents x As Panel
     Friend WithEvents txtResultado As TextBox
@@ -175,7 +175,7 @@ Partial Class Ecuacion_CalorComponente
     Friend WithEvents Foto_Ecuacion As PictureBox
     Friend WithEvents Btn_calcular_ecuacion As Button
     Friend WithEvents Panel_foto_ecuacion As Panel
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnVolver As Button
     Friend WithEvents Label2 As Label
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnSalir As Button
 End Class

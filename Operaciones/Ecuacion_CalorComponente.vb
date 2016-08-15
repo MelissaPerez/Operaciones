@@ -7,7 +7,7 @@
         Me.seleccion = image
         InitializeComponent()
 
-        Foto_Ecuacion.Image = System.Drawing.Bitmap.FromFile("C:\Users\Ameli\Documents\Visual Studio 2015\Projects\Operaciones\Operaciones\Imagenes\" + seleccion + ".PNG")
+        Foto_Ecuacion.Image = System.Drawing.Bitmap.FromFile("C:\Users\Ameli\Repositorios\Operaciones\Operaciones\Imagenes\" + seleccion + ".PNG")
 
     End Sub
 
@@ -15,7 +15,7 @@
 
         'Note: validacion aun no funciona bien
 
-        Dim temperatura As Double = Me.temp.Text
+        Dim temperatura As Double = Me.txtTemperatura.Text
         Dim resultado As Double
         Dim continuar As Boolean = True
 
@@ -74,7 +74,7 @@
 
     End Sub
 
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles btnVolver.Click
 
         Dim oForm As Calor_Componente
         oForm = New Calor_Componente
@@ -83,7 +83,11 @@
 
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
         Me.Close()
+    End Sub
+
+    Private Sub Foto_Ecuacion_Click(sender As Object, e As EventArgs) Handles Foto_Ecuacion.Click
+
     End Sub
 End Class

@@ -30,3 +30,4 @@ C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Debug\Operaciones.Ecuaci
 C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Debug\Operaciones.Inicio.resources
 C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Debug\Operaciones.Resources.resources
 C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Debug\Operaciones.vbproj.GenerateResource.Cache
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Debug\Operaciones.Ecuacion_ChoiOkos.resources
