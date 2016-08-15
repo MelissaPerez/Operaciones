@@ -96,6 +96,12 @@
     <Compile Include="Ecuacion_ChoiOkos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Ecuacion_Conductividad_TipoProducto.Designer.vb">
+      <DependentUpon>Ecuacion_Conductividad_TipoProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ecuacion_Conductividad_TipoProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TipoEcuacion.vb" />
     <Compile Include="Conductividad.Designer.vb">
       <DependentUpon>Conductividad.vb</DependentUpon>
@@ -150,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ecuacion_ChoiOkos.resx">
       <DependentUpon>Ecuacion_ChoiOkos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ecuacion_Conductividad_TipoProducto.resx">
+      <DependentUpon>Ecuacion_Conductividad_TipoProducto.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.vb</DependentUpon>

@@ -35,6 +35,7 @@ Partial Class Ecuacion_ChoiOkos
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtTemperatura = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.txtFibra = New System.Windows.Forms.TextBox()
         Me.txtHumedad = New System.Windows.Forms.TextBox()
         Me.txtCeniza = New System.Windows.Forms.TextBox()
@@ -57,7 +58,7 @@ Partial Class Ecuacion_ChoiOkos
         '
         'btnSalir
         '
-        Me.btnSalir.Location = New System.Drawing.Point(419, 409)
+        Me.btnSalir.Location = New System.Drawing.Point(441, 465)
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Size = New System.Drawing.Size(75, 23)
         Me.btnSalir.TabIndex = 14
@@ -66,7 +67,7 @@ Partial Class Ecuacion_ChoiOkos
         '
         'btnVolver
         '
-        Me.btnVolver.Location = New System.Drawing.Point(419, 368)
+        Me.btnVolver.Location = New System.Drawing.Point(441, 424)
         Me.btnVolver.Name = "btnVolver"
         Me.btnVolver.Size = New System.Drawing.Size(75, 23)
         Me.btnVolver.TabIndex = 10
@@ -95,7 +96,7 @@ Partial Class Ecuacion_ChoiOkos
         Me.x.Controls.Add(Me.Label2)
         Me.x.Controls.Add(Me.txtResultado)
         Me.x.Controls.Add(Me.Label3)
-        Me.x.Location = New System.Drawing.Point(13, 409)
+        Me.x.Location = New System.Drawing.Point(12, 453)
         Me.x.Name = "x"
         Me.x.Size = New System.Drawing.Size(385, 39)
         Me.x.TabIndex = 12
@@ -131,7 +132,7 @@ Partial Class Ecuacion_ChoiOkos
         Me.Panel_ecuacion_param.Controls.Add(Me.Btn_calcular_ecuacion)
         Me.Panel_ecuacion_param.Controls.Add(Me.Label1)
         Me.Panel_ecuacion_param.Controls.Add(Me.txtTemperatura)
-        Me.Panel_ecuacion_param.Location = New System.Drawing.Point(13, 352)
+        Me.Panel_ecuacion_param.Location = New System.Drawing.Point(12, 396)
         Me.Panel_ecuacion_param.Name = "Panel_ecuacion_param"
         Me.Panel_ecuacion_param.Size = New System.Drawing.Size(385, 51)
         Me.Panel_ecuacion_param.TabIndex = 11
@@ -165,6 +166,7 @@ Partial Class Ecuacion_ChoiOkos
         '
         Me.Panel1.AllowDrop = True
         Me.Panel1.AutoSize = True
+        Me.Panel1.Controls.Add(Me.Label11)
         Me.Panel1.Controls.Add(Me.txtFibra)
         Me.Panel1.Controls.Add(Me.txtHumedad)
         Me.Panel1.Controls.Add(Me.txtCeniza)
@@ -180,9 +182,18 @@ Partial Class Ecuacion_ChoiOkos
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Location = New System.Drawing.Point(12, 223)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(504, 123)
+        Me.Panel1.Size = New System.Drawing.Size(504, 167)
         Me.Panel1.TabIndex = 15
         Me.Panel1.TabStop = True
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(31, 140)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(152, 13)
+        Me.Label11.TabIndex = 13
+        Me.Label11.Text = "*Ingresar decimales con coma "
         '
         'txtFibra
         '
@@ -295,7 +306,7 @@ Partial Class Ecuacion_ChoiOkos
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(542, 454)
+        Me.ClientSize = New System.Drawing.Size(542, 502)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.btnVolver)
@@ -343,4 +354,5 @@ Partial Class Ecuacion_ChoiOkos
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
+    Friend WithEvents Label11 As Label
 End Class

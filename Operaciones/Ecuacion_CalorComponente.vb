@@ -19,37 +19,53 @@
         Dim resultado As Double
         Dim continuar As Boolean = True
 
-        If seleccion = "Agua (-40°C a 0°C)" & (temperatura > 0 Or temperatura < -40) Then
-            Dim msg = "¡Esta ecuación funciona para temperpaturas entre -40°C y 0°C!"
-            MsgBox(msg)
-            Dim style = MsgBoxStyle.Critical
-            continuar = False
 
+        Console.WriteLine(seleccion)
+
+        'Validación: si se selecciona agua entre -40 y 0 °C no se pueden ingresar temperaturas fuera de ese rango
+        If seleccion = "Agua (-40°C a 0°C)" Then
+            If temperatura < -40 Or temperatura > 0 Then
+                Console.WriteLine("si")
+                Dim msg = "¡Esta ecuación funciona para temperpaturas entre -40°C y 0°C!"
+                MsgBox(msg)
+                Dim style = MsgBoxStyle.Critical
+                continuar = False
+            End If
         End If
 
-        If seleccion = "Agua (0°C a 150°C)" & (temperatura < 0 Or temperatura > 150) Then
-            Dim msg = "¡Esta ecuación funciona para temperpaturas entre 0°C y 150°C!"
-            MsgBox(msg)
-            Dim style = MsgBoxStyle.Critical
-            continuar = False
+        'Validación: si se selecciona agua entre 0 y 150 °C no se pueden ingresar temperaturas fuera de ese rango
+        If seleccion = "Agua (0°C a 150°C)" Then
+            If (temperatura < 0 Or temperatura > 150) Then
+
+                Dim msg = "¡Esta ecuación funciona para temperpaturas entre 0°C y 150°C!"
+                MsgBox(msg)
+                Dim style = MsgBoxStyle.Critical
+                continuar = False
+            End If
         End If
 
-        If temperatura > 150 Or temperatura < -40 Then
-            Dim msg = "¡Esta ecuación funciona para temperpaturas entre -40°C y 150°C!"
-            MsgBox(msg)
-            Dim style = MsgBoxStyle.Critical
-            continuar = False
+        'Validación: si se selecciona algún componente diferente a agua no se pueden ingresar temperaturas fuera del rango -40 a 150°C
+        If seleccion = "Carbohidratos" Or seleccion = "Proteína" Or seleccion = "Lípidos" Or seleccion = "Cenizas" Or seleccion = "Hielo" Then
+            If temperatura > 150 Or temperatura < -40 Then
+                Dim msg = "¡Esta ecuación funciona para temperpaturas entre -40°C y 150°C!"
+                MsgBox(msg)
+                Dim style = MsgBoxStyle.Critical
+                continuar = False
 
+            End If
         End If
+
+        'Si pasa las validaciones anteriores, continúa con el cálculo del calor específico para cada componente
 
         If continuar = True Then
 
             Select Case Me.seleccion
 
-                Case "Agua (-40°C a  0°C)"
+                Case "Agua (-40°C a 0°C)"
                     resultado = 4081.7 - 5.3062 * temperatura + 0.99516 * temperatura ^ 2
+                    'Formatear del resultado para mostrar 4 decimales
                     Me.txtResultado.Text = Format(resultado, "0.0000")
-                Case "Agua (  0°C   a 150°C)"
+                Case "Agua (0°C a 150°C)"
                     resultado = 4176.2 - 0.0909 * temperatura + 5.4731 * (10 ^ -3) * temperatura ^ 2
                     Me.txtResultado.Text = Format(resultado, "0.0000")
                 Case "Carbohidratos"
@@ -87,7 +103,11 @@
         Me.Close()
     End Sub
 
-    Private Sub Foto_Ecuacion_Click(sender As Object, e As EventArgs) Handles Foto_Ecuacion.Click
-
+    Private Sub Panel_foto_ecuacion_Paint(sender As Object, e As PaintEventArgs) Handles Panel_foto_ecuacion.Paint
+        If seleccion = "Agua (-40°C a 0°C)" Then
+            Me.lblObservaciones.Text = "Para agua entre (-40°C - 0°C)"
+        ElseIf seleccion = "Agua (0°C a 150°C)" Then
+            Me.lblObservaciones.Text = "Para agua entre (0°C - 150°C)"
+        End If
     End Sub
 End Class

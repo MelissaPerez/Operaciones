@@ -81,7 +81,7 @@ Partial Class Calor_Componente
         'Cmb_calor_componente
         '
         Me.Cmb_calor_componente.FormattingEnabled = True
-        Me.Cmb_calor_componente.Items.AddRange(New Object() {"Agua (-40°C a  0°C)", "Agua (  0°C   a 150°C)", "Carbohidratos", "Proteína", "Lípidos", "Cenizas", "Hielo"})
+        Me.Cmb_calor_componente.Items.AddRange(New Object() {"Agua (-40°C a 0°C)", "Agua (0°C a 150°C)", "Carbohidratos", "Proteína", "Lípidos", "Cenizas", "Hielo"})
         Me.Cmb_calor_componente.Location = New System.Drawing.Point(77, 27)
         Me.Cmb_calor_componente.Name = "Cmb_calor_componente"
         Me.Cmb_calor_componente.Size = New System.Drawing.Size(304, 21)
@@ -96,7 +96,7 @@ Partial Class Calor_Componente
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Escoja el componente deseado"
         '
-        'Calor_componente
+        'Calor_Componente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -104,7 +104,7 @@ Partial Class Calor_Componente
         Me.Controls.Add(Me.Btn_volver)
         Me.Controls.Add(Me.Panel_MostrarEcuacion_Componentes)
         Me.Controls.Add(Me.Panel_calor_autor)
-        Me.Name = "Calor_componente"
+        Me.Name = "Calor_Componente"
         Me.Text = "Calor_componente"
         Me.Panel_MostrarEcuacion_Componentes.ResumeLayout(False)
         CType(Me.Foto_Ecuacion, System.ComponentModel.ISupportInitialize).EndInit()

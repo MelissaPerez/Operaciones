@@ -22,7 +22,7 @@ Partial Class Ecuacion_CalorComponente
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblParametro = New System.Windows.Forms.Label()
         Me.txtTemperatura = New System.Windows.Forms.TextBox()
         Me.Panel_ecuacion_param = New System.Windows.Forms.Panel()
         Me.Btn_calcular_ecuacion = New System.Windows.Forms.Button()
@@ -34,20 +34,21 @@ Partial Class Ecuacion_CalorComponente
         Me.Foto_Ecuacion = New System.Windows.Forms.PictureBox()
         Me.Panel_foto_ecuacion = New System.Windows.Forms.Panel()
         Me.btnSalir = New System.Windows.Forms.Button()
+        Me.lblObservaciones = New System.Windows.Forms.Label()
         Me.Panel_ecuacion_param.SuspendLayout()
         Me.x.SuspendLayout()
         CType(Me.Foto_Ecuacion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_foto_ecuacion.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Label1
+        'lblParametro
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(22, 16)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(87, 13)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Temperatura (°C)"
+        Me.lblParametro.AutoSize = True
+        Me.lblParametro.Location = New System.Drawing.Point(22, 16)
+        Me.lblParametro.Name = "lblParametro"
+        Me.lblParametro.Size = New System.Drawing.Size(87, 13)
+        Me.lblParametro.TabIndex = 1
+        Me.lblParametro.Text = "Temperatura (°C)"
         '
         'txtTemperatura
         '
@@ -59,7 +60,7 @@ Partial Class Ecuacion_CalorComponente
         'Panel_ecuacion_param
         '
         Me.Panel_ecuacion_param.Controls.Add(Me.Btn_calcular_ecuacion)
-        Me.Panel_ecuacion_param.Controls.Add(Me.Label1)
+        Me.Panel_ecuacion_param.Controls.Add(Me.lblParametro)
         Me.Panel_ecuacion_param.Controls.Add(Me.txtTemperatura)
         Me.Panel_ecuacion_param.Location = New System.Drawing.Point(12, 94)
         Me.Panel_ecuacion_param.Name = "Panel_ecuacion_param"
@@ -130,10 +131,11 @@ Partial Class Ecuacion_CalorComponente
         '
         'Panel_foto_ecuacion
         '
+        Me.Panel_foto_ecuacion.Controls.Add(Me.lblObservaciones)
         Me.Panel_foto_ecuacion.Controls.Add(Me.Foto_Ecuacion)
         Me.Panel_foto_ecuacion.Location = New System.Drawing.Point(12, 12)
         Me.Panel_foto_ecuacion.Name = "Panel_foto_ecuacion"
-        Me.Panel_foto_ecuacion.Size = New System.Drawing.Size(385, 76)
+        Me.Panel_foto_ecuacion.Size = New System.Drawing.Size(589, 76)
         Me.Panel_foto_ecuacion.TabIndex = 8
         '
         'btnSalir
@@ -145,11 +147,20 @@ Partial Class Ecuacion_CalorComponente
         Me.btnSalir.Text = "Salir"
         Me.btnSalir.UseVisualStyleBackColor = True
         '
+        'lblObservaciones
+        '
+        Me.lblObservaciones.AutoSize = True
+        Me.lblObservaciones.Location = New System.Drawing.Point(403, 28)
+        Me.lblObservaciones.Name = "lblObservaciones"
+        Me.lblObservaciones.Size = New System.Drawing.Size(10, 13)
+        Me.lblObservaciones.TabIndex = 8
+        Me.lblObservaciones.Text = "-"
+        '
         'Ecuacion_CalorComponente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(508, 223)
+        Me.ClientSize = New System.Drawing.Size(613, 223)
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.Panel_foto_ecuacion)
@@ -163,10 +174,11 @@ Partial Class Ecuacion_CalorComponente
         Me.x.PerformLayout()
         CType(Me.Foto_Ecuacion, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_foto_ecuacion.ResumeLayout(False)
+        Me.Panel_foto_ecuacion.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblParametro As Label
     Friend WithEvents txtTemperatura As TextBox
     Friend WithEvents Panel_ecuacion_param As Panel
     Friend WithEvents x As Panel
@@ -178,4 +190,5 @@ Partial Class Ecuacion_CalorComponente
     Friend WithEvents btnVolver As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents btnSalir As Button
+    Friend WithEvents lblObservaciones As Label
 End Class

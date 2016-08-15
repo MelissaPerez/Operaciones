@@ -19,7 +19,7 @@
     Private Sub Cmb_calor_autor_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Cmb_calor_componente.SelectedIndexChanged
 
         seleccion = Cmb_calor_componente.SelectedItem
-        Foto_Ecuacion.Image = System.Drawing.Bitmap.FromFile("C:\Users\Ameli\Documents\Visual Studio 2015\Projects\Operaciones\Operaciones\Imagenes\" + seleccion + ".PNG")
+        Foto_Ecuacion.Image = System.Drawing.Bitmap.FromFile("C:\Users\Ameli\Repositorios\Operaciones\Operaciones\Imagenes\" + seleccion + ".PNG")
         visiblePanel = 1
         Me.Panel_MostrarEcuacion_Componentes_Paint()
 
