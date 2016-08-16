@@ -21,11 +21,26 @@
             seleccion = "Perejil" Or
             seleccion = "Apio" Or
             seleccion = "Manzana" Or
-            seleccion = "Papaya" Or
-            seleccion = "Carne molida" Or
-            seleccion = "Surimi" Then
+            seleccion = "Papaya" Then
 
             lblImagenConductividad.Text = "Xbh: Contenido de humedad en base húmeda"
+
+        ElseIf seleccion = "Surimi" Or seleccion = "Carne molida" Then
+            lblImagenConductividad.Text = "Xbh: Contenido de humedad en base húmeda" & Chr(13) & "T: Temperatura del producto (°C)"
+
+        ElseIf seleccion = "Carnes (fraccion agua, temperatura)" Then
+            lblImagenConductividad.Text = "Xw: Fracción másica de agua (g agua/ g producto)" & Chr(13) & "T: Temperatura del producto (°C)"
+
+        ElseIf seleccion = "Carnes (fraccion agua)" Or seleccion = "Zumo de frutas (fraccion agua)" Then
+            lblImagenConductividad.Text = "Xw: Fracción másica de agua (g agua/ g producto)"
+
+        ElseIf seleccion = "Zumo de frutas (fraccion agua, temperatura, temp. congelacion)" Then
+            lblImagenConductividad.Text = "Xw: Fracción másica de agua (g agua/ g producto)" & Chr(13) & "T: Temperatura del producto (°C)" & Chr(13) & "TCong: Temperatura de congelación del producto (°C)"
+
+        ElseIf seleccion = "Pera" Then
+            lblImagenConductividad.Text = "Xbs: Contenido de humedad en base seca"
+
+
         End If
 
 
@@ -43,5 +58,9 @@
         oForm = New Ecuacion_Conductividad_TipoProducto(seleccion)
         oForm.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub lblImagenConductividad_Click(sender As Object, e As EventArgs) Handles lblImagenConductividad.Click
+
     End Sub
 End Class

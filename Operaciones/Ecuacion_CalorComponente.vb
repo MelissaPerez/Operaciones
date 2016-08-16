@@ -13,8 +13,6 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Btn_calcular_ecuacion.Click
 
-        'Note: validacion aun no funciona bien
-
         Dim temperatura As Double = Me.txtTemperatura.Text
         Dim resultado As Double
         Dim continuar As Boolean = True
@@ -104,6 +102,7 @@
     End Sub
 
     Private Sub Panel_foto_ecuacion_Paint(sender As Object, e As PaintEventArgs) Handles Panel_foto_ecuacion.Paint
+        'Recordatorio al ususario sobre los rangos de temperaturas
         If seleccion = "Agua (-40°C a 0°C)" Then
             Me.lblObservaciones.Text = "Para agua entre (-40°C - 0°C)"
         ElseIf seleccion = "Agua (0°C a 150°C)" Then

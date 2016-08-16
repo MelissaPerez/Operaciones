@@ -50,24 +50,25 @@ Partial Class Conductividad
         Me.Panel_MostrarEcuacion_Conductividad.Controls.Add(Me.Foto_Ecuacion)
         Me.Panel_MostrarEcuacion_Conductividad.Location = New System.Drawing.Point(22, 89)
         Me.Panel_MostrarEcuacion_Conductividad.Name = "Panel_MostrarEcuacion_Conductividad"
-        Me.Panel_MostrarEcuacion_Conductividad.Size = New System.Drawing.Size(580, 126)
+        Me.Panel_MostrarEcuacion_Conductividad.Size = New System.Drawing.Size(580, 139)
         Me.Panel_MostrarEcuacion_Conductividad.TabIndex = 6
         '
         'lblImagenConductividad
         '
         Me.lblImagenConductividad.AutoSize = True
-        Me.lblImagenConductividad.Location = New System.Drawing.Point(36, 91)
+        Me.lblImagenConductividad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lblImagenConductividad.Location = New System.Drawing.Point(36, 94)
         Me.lblImagenConductividad.Name = "lblImagenConductividad"
         Me.lblImagenConductividad.Size = New System.Drawing.Size(10, 13)
         Me.lblImagenConductividad.TabIndex = 1
         Me.lblImagenConductividad.Text = "-"
-        Me.lblImagenConductividad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblImagenConductividad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Foto_Ecuacion
         '
         Me.Foto_Ecuacion.Location = New System.Drawing.Point(17, 3)
         Me.Foto_Ecuacion.Name = "Foto_Ecuacion"
-        Me.Foto_Ecuacion.Size = New System.Drawing.Size(548, 85)
+        Me.Foto_Ecuacion.Size = New System.Drawing.Size(548, 88)
         Me.Foto_Ecuacion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.Foto_Ecuacion.TabIndex = 0
         Me.Foto_Ecuacion.TabStop = False
@@ -84,7 +85,7 @@ Partial Class Conductividad
         'cmbConductividad
         '
         Me.cmbConductividad.FormattingEnabled = True
-        Me.cmbConductividad.Items.AddRange(New Object() {"Remolacha", "Zanahoria", "Perejil", "Apio", "Uva pasa", "Papaya", "Melón", "Manzana", "Pera", "Zumo de frutas 1", "Zumo de frutas 2", "Carne molida", "Carnes", "Surimi"})
+        Me.cmbConductividad.Items.AddRange(New Object() {"Remolacha", "Zanahoria", "Perejil", "Apio", "Uva pasa", "Papaya", "Melón", "Manzana", "Pera", "Zumo de frutas (fraccion agua)", "Zumo de frutas (fraccion agua, temperatura, temp. congelacion)", "Carne molida", "Carnes (fraccion agua)", "Carnes (fraccion agua, temperatura)", "Surimi"})
         Me.cmbConductividad.Location = New System.Drawing.Point(77, 27)
         Me.cmbConductividad.Name = "cmbConductividad"
         Me.cmbConductividad.Size = New System.Drawing.Size(304, 21)

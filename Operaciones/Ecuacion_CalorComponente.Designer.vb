@@ -33,8 +33,8 @@ Partial Class Ecuacion_CalorComponente
         Me.btnVolver = New System.Windows.Forms.Button()
         Me.Foto_Ecuacion = New System.Windows.Forms.PictureBox()
         Me.Panel_foto_ecuacion = New System.Windows.Forms.Panel()
-        Me.btnSalir = New System.Windows.Forms.Button()
         Me.lblObservaciones = New System.Windows.Forms.Label()
+        Me.btnSalir = New System.Windows.Forms.Button()
         Me.Panel_ecuacion_param.SuspendLayout()
         Me.x.SuspendLayout()
         CType(Me.Foto_Ecuacion, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -126,6 +126,7 @@ Partial Class Ecuacion_CalorComponente
         Me.Foto_Ecuacion.Location = New System.Drawing.Point(13, 12)
         Me.Foto_Ecuacion.Name = "Foto_Ecuacion"
         Me.Foto_Ecuacion.Size = New System.Drawing.Size(361, 51)
+        Me.Foto_Ecuacion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.Foto_Ecuacion.TabIndex = 7
         Me.Foto_Ecuacion.TabStop = False
         '
@@ -138,15 +139,6 @@ Partial Class Ecuacion_CalorComponente
         Me.Panel_foto_ecuacion.Size = New System.Drawing.Size(589, 76)
         Me.Panel_foto_ecuacion.TabIndex = 8
         '
-        'btnSalir
-        '
-        Me.btnSalir.Location = New System.Drawing.Point(418, 166)
-        Me.btnSalir.Name = "btnSalir"
-        Me.btnSalir.Size = New System.Drawing.Size(75, 23)
-        Me.btnSalir.TabIndex = 9
-        Me.btnSalir.Text = "Salir"
-        Me.btnSalir.UseVisualStyleBackColor = True
-        '
         'lblObservaciones
         '
         Me.lblObservaciones.AutoSize = True
@@ -155,6 +147,15 @@ Partial Class Ecuacion_CalorComponente
         Me.lblObservaciones.Size = New System.Drawing.Size(10, 13)
         Me.lblObservaciones.TabIndex = 8
         Me.lblObservaciones.Text = "-"
+        '
+        'btnSalir
+        '
+        Me.btnSalir.Location = New System.Drawing.Point(418, 166)
+        Me.btnSalir.Name = "btnSalir"
+        Me.btnSalir.Size = New System.Drawing.Size(75, 23)
+        Me.btnSalir.TabIndex = 9
+        Me.btnSalir.Text = "Salir"
+        Me.btnSalir.UseVisualStyleBackColor = True
         '
         'Ecuacion_CalorComponente
         '
