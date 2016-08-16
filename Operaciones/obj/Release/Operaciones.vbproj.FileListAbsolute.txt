@@ -1,0 +1,17 @@
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\bin\Release\Operaciones.exe.config
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\bin\Release\Operaciones.exe
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\bin\Release\Operaciones.pdb
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\bin\Release\Operaciones.xml
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Release\Operaciones.Calor_Autor.resources
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Release\Operaciones.Calor_Componente.resources
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Release\Operaciones.Calor_TipoProducto.resources
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Release\Operaciones.Conductividad.resources
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Release\Operaciones.Ecuacion_CalorComponente.resources
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Release\Operaciones.Ecuacion_ChoiOkos.resources
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Release\Operaciones.Ecuacion_Conductividad_TipoProducto.resources
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Release\Operaciones.Inicio.resources
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Release\Operaciones.Resources.resources
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Release\Operaciones.vbproj.GenerateResource.Cache
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Release\Operaciones.exe
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Release\Operaciones.xml
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Release\Operaciones.pdb
