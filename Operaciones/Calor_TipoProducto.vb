@@ -1,5 +1,6 @@
 ﻿Public Class Calor_TipoProducto
     Dim seleccion As String
+    Dim continuar = 1
 
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel_TipoProducto.Paint
 
@@ -21,9 +22,18 @@
     End Sub
 
     Private Sub btnSiguiente_Click(sender As Object, e As EventArgs) Handles btnSiguiente.Click
-        Dim oForm As Ecuacion_ChoiOkos
-        oForm = New Ecuacion_ChoiOkos(seleccion)
-        oForm.Show()
-        Me.Hide()
+        If seleccion = "" Then
+            Dim msg = "¡Por favor escoja una opción!"
+            MsgBox(msg)
+            Dim style = MsgBoxStyle.Critical
+
+
+        ElseIf continuar = 1 Then
+
+            Dim oForm As Ecuacion_ChoiOkos
+            oForm = New Ecuacion_ChoiOkos(seleccion)
+            oForm.Show()
+            Me.Hide()
+        End If
     End Sub
 End Class

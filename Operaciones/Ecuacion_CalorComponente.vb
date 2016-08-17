@@ -1,4 +1,6 @@
-﻿Public Class Ecuacion_CalorComponente
+﻿Imports System.IO
+
+Public Class Ecuacion_CalorComponente
 
     Dim tipoEcuacion As Integer
     Dim seleccion As String
@@ -6,8 +8,8 @@
     Sub New(ByVal image As String)
         Me.seleccion = image
         InitializeComponent()
-
-        Foto_Ecuacion.Image = System.Drawing.Bitmap.FromFile("C:\Users\Ameli\Repositorios\Operaciones\Operaciones\Imagenes\" + seleccion + ".PNG")
+        Console.WriteLine(My.Application.Info.DirectoryPath)
+        Foto_Ecuacion.Image = System.Drawing.Bitmap.FromFile("..\..\Imagenes\" + seleccion + ".PNG")
 
     End Sub
 

@@ -30,7 +30,7 @@
         seleccion = Cmb_calor_autor.SelectedItem
 
         If seleccion = "Choi - Okos (1986)" Then
-            Foto_Ecuacion.Image = System.Drawing.Bitmap.FromFile("C:\Users\Ameli\Repositorios\Operaciones\Operaciones\Imagenes\ChoiOkos.PNG")
+            Foto_Ecuacion.Image = System.Drawing.Bitmap.FromFile("..\..\Imagenes\ChoiOkos.PNG")
             visiblePanel = 1
             Me.Panel_MostrarEcuacion_Autores_Paint()
         End If

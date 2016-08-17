@@ -1,6 +1,7 @@
 ﻿Public Class Conductividad
     Dim visiblePanel = 0
     Dim seleccion As String
+    Dim continuar = 1
 
     Private Sub Panel_MostrarEcuacion_Conductividad_Paint() Handles Panel_MostrarEcuacion_Conductividad.Paint
         If visiblePanel = 0 Then
@@ -12,7 +13,7 @@
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbConductividad.SelectedIndexChanged
         seleccion = cmbConductividad.SelectedItem
-        Foto_Ecuacion.Image = System.Drawing.Bitmap.FromFile("C:\Users\Ameli\Repositorios\Operaciones\Operaciones\Imagenes\" + seleccion + ".PNG")
+        Foto_Ecuacion.Image = System.Drawing.Bitmap.FromFile("..\..\Imagenes\" + seleccion + ".PNG")
         visiblePanel = 1
         Me.Panel_MostrarEcuacion_Conductividad_Paint()
 
@@ -56,10 +57,19 @@
     End Sub
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles btnSiguiente.Click
-        Dim oForm As Ecuacion_Conductividad_TipoProducto
-        oForm = New Ecuacion_Conductividad_TipoProducto(seleccion)
-        oForm.Show()
-        Me.Hide()
+
+        If seleccion = "" Then
+            Dim msg = "¡Por favor escoja una opción!"
+            MsgBox(msg)
+            Dim style = MsgBoxStyle.Critical
+            continuar = 0
+
+        ElseIf continuar = 1 Then
+            Dim oForm As Ecuacion_Conductividad_TipoProducto
+            oForm = New Ecuacion_Conductividad_TipoProducto(seleccion)
+            oForm.Show()
+            Me.Hide()
+        End If
     End Sub
 
 

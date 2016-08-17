@@ -6,8 +6,8 @@
         Me.seleccion = image
         InitializeComponent()
 
-        If seleccion = "Choi - Okos (1986)" Then
-            Foto_Ecuacion.Image = System.Drawing.Bitmap.FromFile("C:\Users\Ameli\Repositorios\Operaciones\Operaciones\Imagenes\ChoiOkos.PNG")
+        If seleccion <> "" Then
+            Foto_Ecuacion.Image = System.Drawing.Bitmap.FromFile("..\..\Imagenes\ChoiOkos.PNG")
         End If
 
     End Sub

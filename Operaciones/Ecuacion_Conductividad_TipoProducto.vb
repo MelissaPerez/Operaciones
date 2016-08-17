@@ -14,7 +14,7 @@
         txtTempCongelacion.Visible = False
 
         'Ruta de la imagen
-        Foto_Ecuacion.Image = System.Drawing.Bitmap.FromFile("C:\Users\Ameli\Repositorios\Operaciones\Operaciones\Imagenes\" + seleccion + ".PNG")
+        Foto_Ecuacion.Image = System.Drawing.Bitmap.FromFile("..\..\Imagenes\" + seleccion + ".PNG")
 
     End Sub
 
