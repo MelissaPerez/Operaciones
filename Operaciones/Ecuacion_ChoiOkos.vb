@@ -101,8 +101,8 @@
     End Sub
 
     Private Sub btnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click
-        Dim oForm As Calor_Autor
-        oForm = New Calor_Autor()
+        Dim oForm As Inicio
+        oForm = New Inicio()
         oForm.Show()
         Me.Hide()
     End Sub

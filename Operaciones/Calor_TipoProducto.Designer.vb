@@ -28,6 +28,7 @@ Partial Class Calor_TipoProducto
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Panel_TipoProducto = New System.Windows.Forms.Panel()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnSiguiente = New System.Windows.Forms.Button()
         Me.Panel_MostrarEcuacion.SuspendLayout()
         CType(Me.Foto_Ecuacion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_TipoProducto.SuspendLayout()
@@ -52,18 +53,24 @@ Partial Class Calor_TipoProducto
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(36, 11)
+        Me.Label1.Font = New System.Drawing.Font("Constantia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.DarkOliveGreen
+        Me.Label1.Location = New System.Drawing.Point(28, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(130, 13)
+        Me.Label1.Size = New System.Drawing.Size(170, 17)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Escoja el tipo de producto"
         '
         'ComboBox1
         '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ComboBox1.Font = New System.Drawing.Font("Constantia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(77, 27)
+        Me.ComboBox1.Location = New System.Drawing.Point(138, 34)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(304, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(304, 23)
         Me.ComboBox1.TabIndex = 0
         '
         'Panel_TipoProducto
@@ -77,18 +84,38 @@ Partial Class Calor_TipoProducto
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(506, 333)
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.Olive
+        Me.Button1.FlatAppearance.BorderSize = 2
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Constantia", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.Olive
+        Me.Button1.Location = New System.Drawing.Point(77, 310)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(97, 31)
         Me.Button1.TabIndex = 4
         Me.Button1.Text = "Volver"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'btnSiguiente
+        '
+        Me.btnSiguiente.BackColor = System.Drawing.Color.Olive
+        Me.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSiguiente.Font = New System.Drawing.Font("Constantia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSiguiente.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnSiguiente.Location = New System.Drawing.Point(458, 310)
+        Me.btnSiguiente.Name = "btnSiguiente"
+        Me.btnSiguiente.Size = New System.Drawing.Size(97, 31)
+        Me.btnSiguiente.TabIndex = 5
+        Me.btnSiguiente.Text = "Siguiente"
+        Me.btnSiguiente.UseVisualStyleBackColor = False
+        '
         'Calor_TipoProducto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(614, 394)
+        Me.BackColor = System.Drawing.Color.Ivory
+        Me.ClientSize = New System.Drawing.Size(614, 362)
+        Me.Controls.Add(Me.btnSiguiente)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel_MostrarEcuacion)
         Me.Controls.Add(Me.Panel_TipoProducto)
@@ -107,4 +134,5 @@ Partial Class Calor_TipoProducto
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Panel_TipoProducto As Panel
     Friend WithEvents Button1 As Button
+    Friend WithEvents btnSiguiente As Button
 End Class

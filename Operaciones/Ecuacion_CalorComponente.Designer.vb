@@ -44,17 +44,21 @@ Partial Class Ecuacion_CalorComponente
         'lblParametro
         '
         Me.lblParametro.AutoSize = True
+        Me.lblParametro.Font = New System.Drawing.Font("Constantia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblParametro.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblParametro.Location = New System.Drawing.Point(22, 16)
         Me.lblParametro.Name = "lblParametro"
-        Me.lblParametro.Size = New System.Drawing.Size(87, 13)
+        Me.lblParametro.Size = New System.Drawing.Size(115, 17)
         Me.lblParametro.TabIndex = 1
         Me.lblParametro.Text = "Temperatura (°C)"
         '
         'txtTemperatura
         '
-        Me.txtTemperatura.Location = New System.Drawing.Point(131, 13)
+        Me.txtTemperatura.Font = New System.Drawing.Font("Constantia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTemperatura.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.txtTemperatura.Location = New System.Drawing.Point(147, 16)
         Me.txtTemperatura.Name = "txtTemperatura"
-        Me.txtTemperatura.Size = New System.Drawing.Size(100, 20)
+        Me.txtTemperatura.Size = New System.Drawing.Size(100, 24)
         Me.txtTemperatura.TabIndex = 3
         '
         'Panel_ecuacion_param
@@ -62,26 +66,30 @@ Partial Class Ecuacion_CalorComponente
         Me.Panel_ecuacion_param.Controls.Add(Me.Btn_calcular_ecuacion)
         Me.Panel_ecuacion_param.Controls.Add(Me.lblParametro)
         Me.Panel_ecuacion_param.Controls.Add(Me.txtTemperatura)
-        Me.Panel_ecuacion_param.Location = New System.Drawing.Point(12, 94)
+        Me.Panel_ecuacion_param.Location = New System.Drawing.Point(12, 107)
         Me.Panel_ecuacion_param.Name = "Panel_ecuacion_param"
-        Me.Panel_ecuacion_param.Size = New System.Drawing.Size(385, 51)
+        Me.Panel_ecuacion_param.Size = New System.Drawing.Size(385, 59)
         Me.Panel_ecuacion_param.TabIndex = 5
         '
         'Btn_calcular_ecuacion
         '
+        Me.Btn_calcular_ecuacion.BackColor = System.Drawing.Color.Olive
+        Me.Btn_calcular_ecuacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_calcular_ecuacion.Font = New System.Drawing.Font("Constantia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_calcular_ecuacion.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Btn_calcular_ecuacion.Location = New System.Drawing.Point(285, 13)
         Me.Btn_calcular_ecuacion.Name = "Btn_calcular_ecuacion"
-        Me.Btn_calcular_ecuacion.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_calcular_ecuacion.Size = New System.Drawing.Size(75, 26)
         Me.Btn_calcular_ecuacion.TabIndex = 8
         Me.Btn_calcular_ecuacion.Text = "Calcular"
-        Me.Btn_calcular_ecuacion.UseVisualStyleBackColor = True
+        Me.Btn_calcular_ecuacion.UseVisualStyleBackColor = False
         '
         'x
         '
         Me.x.Controls.Add(Me.Label2)
         Me.x.Controls.Add(Me.txtResultado)
         Me.x.Controls.Add(Me.Label3)
-        Me.x.Location = New System.Drawing.Point(12, 151)
+        Me.x.Location = New System.Drawing.Point(12, 185)
         Me.x.Name = "x"
         Me.x.Size = New System.Drawing.Size(385, 54)
         Me.x.TabIndex = 6
@@ -89,34 +97,45 @@ Partial Class Ecuacion_CalorComponente
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(236, 25)
+        Me.Label2.Font = New System.Drawing.Font("Constantia", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(282, 25)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(30, 13)
+        Me.Label2.Size = New System.Drawing.Size(32, 15)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "J/Kg"
         '
         'txtResultado
         '
-        Me.txtResultado.Location = New System.Drawing.Point(130, 22)
+        Me.txtResultado.Font = New System.Drawing.Font("Constantia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtResultado.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.txtResultado.Location = New System.Drawing.Point(147, 19)
         Me.txtResultado.Name = "txtResultado"
         Me.txtResultado.ReadOnly = True
-        Me.txtResultado.Size = New System.Drawing.Size(100, 20)
+        Me.txtResultado.Size = New System.Drawing.Size(100, 24)
         Me.txtResultado.TabIndex = 1
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(22, 25)
+        Me.Label3.Font = New System.Drawing.Font("Constantia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(67, 23)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(55, 13)
+        Me.Label3.Size = New System.Drawing.Size(70, 17)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Resultado"
         '
         'btnVolver
         '
-        Me.btnVolver.Location = New System.Drawing.Point(418, 110)
+        Me.btnVolver.FlatAppearance.BorderColor = System.Drawing.Color.Olive
+        Me.btnVolver.FlatAppearance.BorderSize = 2
+        Me.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnVolver.Font = New System.Drawing.Font("Constantia", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVolver.ForeColor = System.Drawing.Color.Olive
+        Me.btnVolver.Location = New System.Drawing.Point(61, 264)
         Me.btnVolver.Name = "btnVolver"
-        Me.btnVolver.Size = New System.Drawing.Size(75, 23)
+        Me.btnVolver.Size = New System.Drawing.Size(75, 33)
         Me.btnVolver.TabIndex = 2
         Me.btnVolver.Text = "Volver"
         Me.btnVolver.UseVisualStyleBackColor = True
@@ -150,9 +169,14 @@ Partial Class Ecuacion_CalorComponente
         '
         'btnSalir
         '
-        Me.btnSalir.Location = New System.Drawing.Point(418, 166)
+        Me.btnSalir.FlatAppearance.BorderColor = System.Drawing.Color.Olive
+        Me.btnSalir.FlatAppearance.BorderSize = 2
+        Me.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSalir.Font = New System.Drawing.Font("Constantia", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSalir.ForeColor = System.Drawing.Color.Olive
+        Me.btnSalir.Location = New System.Drawing.Point(471, 265)
         Me.btnSalir.Name = "btnSalir"
-        Me.btnSalir.Size = New System.Drawing.Size(75, 23)
+        Me.btnSalir.Size = New System.Drawing.Size(75, 32)
         Me.btnSalir.TabIndex = 9
         Me.btnSalir.Text = "Salir"
         Me.btnSalir.UseVisualStyleBackColor = True
@@ -161,7 +185,8 @@ Partial Class Ecuacion_CalorComponente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(613, 223)
+        Me.BackColor = System.Drawing.Color.Ivory
+        Me.ClientSize = New System.Drawing.Size(613, 309)
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.Panel_foto_ecuacion)

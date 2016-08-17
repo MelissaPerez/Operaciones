@@ -25,21 +25,23 @@
 
             lblImagenConductividad.Text = "Xbh: Contenido de humedad en base húmeda"
 
-        ElseIf seleccion = "Surimi" Or seleccion = "Carne molida" Then
+        ElseIf seleccion = "Surimi" Or seleccion = "Carne molida" Or seleccion = "Pan blanco" Or seleccion = "Pasta de trigo" Then
             lblImagenConductividad.Text = "Xbh: Contenido de humedad en base húmeda" & Chr(13) & "T: Temperatura del producto (°C)"
 
         ElseIf seleccion = "Carnes (fraccion agua, temperatura)" Then
             lblImagenConductividad.Text = "Xw: Fracción másica de agua (g agua/ g producto)" & Chr(13) & "T: Temperatura del producto (°C)"
 
-        ElseIf seleccion = "Carnes (fraccion agua)" Or seleccion = "Zumo de frutas (fraccion agua)" Then
+        ElseIf seleccion = "Carnes (fraccion agua)" Or seleccion = "Zumo de frutas (fraccion agua)" Or seleccion = "Papa (fraccion de agua)" Then
             lblImagenConductividad.Text = "Xw: Fracción másica de agua (g agua/ g producto)"
 
         ElseIf seleccion = "Zumo de frutas (fraccion agua, temperatura, temp. congelacion)" Then
             lblImagenConductividad.Text = "Xw: Fracción másica de agua (g agua/ g producto)" & Chr(13) & "T: Temperatura del producto (°C)" & Chr(13) & "TCong: Temperatura de congelación del producto (°C)"
 
-        ElseIf seleccion = "Pera" Then
+        ElseIf seleccion = "Pera" Or seleccion = "Papa (base seca)" Then
             lblImagenConductividad.Text = "Xbs: Contenido de humedad en base seca"
 
+        ElseIf seleccion = "Papa (base seca, rango temperatura)" Then
+            lblImagenConductividad.Text = "Xbs: Contenido de humedad en base seca" & Chr(13) & "T: Temperatura del producto (°C)"
 
         End If
 

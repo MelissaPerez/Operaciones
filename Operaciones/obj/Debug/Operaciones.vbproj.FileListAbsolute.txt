@@ -31,3 +31,4 @@ C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Debug\Operaciones.vbproj
 C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Debug\Operaciones.exe
 C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Debug\Operaciones.xml
 C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Debug\Operaciones.pdb
+C:\Users\Ameli\Repositorios\Operaciones\Operaciones\obj\Debug\Operaciones.vbprojResolveAssemblyReference.cache

@@ -37,7 +37,7 @@ Partial Class Conductividad
         '
         'btnVolver
         '
-        Me.btnVolver.Location = New System.Drawing.Point(505, 268)
+        Me.btnVolver.Location = New System.Drawing.Point(61, 286)
         Me.btnVolver.Name = "btnVolver"
         Me.btnVolver.Size = New System.Drawing.Size(97, 31)
         Me.btnVolver.TabIndex = 7
@@ -50,14 +50,14 @@ Partial Class Conductividad
         Me.Panel_MostrarEcuacion_Conductividad.Controls.Add(Me.Foto_Ecuacion)
         Me.Panel_MostrarEcuacion_Conductividad.Location = New System.Drawing.Point(22, 89)
         Me.Panel_MostrarEcuacion_Conductividad.Name = "Panel_MostrarEcuacion_Conductividad"
-        Me.Panel_MostrarEcuacion_Conductividad.Size = New System.Drawing.Size(580, 139)
+        Me.Panel_MostrarEcuacion_Conductividad.Size = New System.Drawing.Size(580, 191)
         Me.Panel_MostrarEcuacion_Conductividad.TabIndex = 6
         '
         'lblImagenConductividad
         '
         Me.lblImagenConductividad.AutoSize = True
         Me.lblImagenConductividad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.lblImagenConductividad.Location = New System.Drawing.Point(36, 94)
+        Me.lblImagenConductividad.Location = New System.Drawing.Point(36, 133)
         Me.lblImagenConductividad.Name = "lblImagenConductividad"
         Me.lblImagenConductividad.Size = New System.Drawing.Size(10, 13)
         Me.lblImagenConductividad.TabIndex = 1
@@ -68,7 +68,7 @@ Partial Class Conductividad
         '
         Me.Foto_Ecuacion.Location = New System.Drawing.Point(17, 3)
         Me.Foto_Ecuacion.Name = "Foto_Ecuacion"
-        Me.Foto_Ecuacion.Size = New System.Drawing.Size(548, 88)
+        Me.Foto_Ecuacion.Size = New System.Drawing.Size(548, 127)
         Me.Foto_Ecuacion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.Foto_Ecuacion.TabIndex = 0
         Me.Foto_Ecuacion.TabStop = False
@@ -85,7 +85,7 @@ Partial Class Conductividad
         'cmbConductividad
         '
         Me.cmbConductividad.FormattingEnabled = True
-        Me.cmbConductividad.Items.AddRange(New Object() {"Remolacha", "Zanahoria", "Perejil", "Apio", "Uva pasa", "Papaya", "Melón", "Manzana", "Pera", "Zumo de frutas (fraccion agua)", "Zumo de frutas (fraccion agua, temperatura, temp. congelacion)", "Carne molida", "Carnes (fraccion agua)", "Carnes (fraccion agua, temperatura)", "Surimi"})
+        Me.cmbConductividad.Items.AddRange(New Object() {"Remolacha", "Zanahoria", "Perejil", "Apio", "Uva pasa", "Papaya", "Melón", "Manzana", "Pera", "Zumo de frutas (fraccion agua)", "Zumo de frutas (fraccion agua, temperatura, temp. congelacion)", "Carne molida", "Carnes (fraccion agua)", "Carnes (fraccion agua, temperatura)", "Surimi", "Pan blanco", "Pasta de trigo", "Papa (fraccion de agua)", "Papa (base seca)", "Papa (base seca, rango temperatura)"})
         Me.cmbConductividad.Location = New System.Drawing.Point(77, 27)
         Me.cmbConductividad.Name = "cmbConductividad"
         Me.cmbConductividad.Size = New System.Drawing.Size(304, 21)
@@ -102,7 +102,7 @@ Partial Class Conductividad
         '
         'btnSiguiente
         '
-        Me.btnSiguiente.Location = New System.Drawing.Point(505, 234)
+        Me.btnSiguiente.Location = New System.Drawing.Point(505, 286)
         Me.btnSiguiente.Name = "btnSiguiente"
         Me.btnSiguiente.Size = New System.Drawing.Size(97, 28)
         Me.btnSiguiente.TabIndex = 8
@@ -113,7 +113,7 @@ Partial Class Conductividad
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(625, 311)
+        Me.ClientSize = New System.Drawing.Size(625, 329)
         Me.Controls.Add(Me.btnSiguiente)
         Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.Panel_MostrarEcuacion_Conductividad)

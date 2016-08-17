@@ -1,9 +1,10 @@
 ﻿Public Class Inicio
 
     Dim botonCalor = 0
+    Dim seleccion As String
 
     Private Sub Panel1_Paint() Handles Panel1.Paint
-        'que pasa si quito parametros?
+        'Se retiran parametros "sender" y "e" para permitir validación del panel
         'Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
         If botonCalor = 0 Then
@@ -37,9 +38,9 @@
         Me.Hide()
     End Sub
 
-    Private Sub Btn_Autores_Click(sender As Object, e As EventArgs) Handles Btn_Autores.Click
-        Dim oForm As Calor_Autor
-        oForm = New Calor_Autor()
+    Private Sub Btn_Autores_Click(sender As Object, e As EventArgs) Handles Btn_Choi.Click
+        Dim oForm As Ecuacion_ChoiOkos
+        oForm = New Ecuacion_ChoiOkos("Choi - Okos (1986)")
         oForm.Show()
         Me.Hide()
     End Sub

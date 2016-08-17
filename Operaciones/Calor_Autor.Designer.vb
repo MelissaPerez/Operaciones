@@ -45,19 +45,25 @@ Partial Class Calor_Autor
         '
         'Cmb_calor_autor
         '
+        Me.Cmb_calor_autor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Cmb_calor_autor.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Cmb_calor_autor.Font = New System.Drawing.Font("Constantia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Cmb_calor_autor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Cmb_calor_autor.FormattingEnabled = True
         Me.Cmb_calor_autor.Items.AddRange(New Object() {"Choi - Okos (1986)"})
-        Me.Cmb_calor_autor.Location = New System.Drawing.Point(77, 27)
+        Me.Cmb_calor_autor.Location = New System.Drawing.Point(84, 38)
         Me.Cmb_calor_autor.Name = "Cmb_calor_autor"
-        Me.Cmb_calor_autor.Size = New System.Drawing.Size(304, 21)
+        Me.Cmb_calor_autor.Size = New System.Drawing.Size(304, 23)
         Me.Cmb_calor_autor.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Constantia", 10.0!)
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(36, 11)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(121, 13)
+        Me.Label1.Size = New System.Drawing.Size(154, 17)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Escoja el autor deseado"
         '
@@ -79,6 +85,11 @@ Partial Class Calor_Autor
         '
         'btnVolver
         '
+        Me.btnVolver.FlatAppearance.BorderColor = System.Drawing.Color.Olive
+        Me.btnVolver.FlatAppearance.BorderSize = 2
+        Me.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnVolver.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVolver.ForeColor = System.Drawing.Color.Olive
         Me.btnVolver.Location = New System.Drawing.Point(491, 345)
         Me.btnVolver.Name = "btnVolver"
         Me.btnVolver.Size = New System.Drawing.Size(112, 29)
@@ -88,18 +99,24 @@ Partial Class Calor_Autor
         '
         'btnSiguiente
         '
+        Me.btnSiguiente.BackColor = System.Drawing.Color.Olive
+        Me.btnSiguiente.FlatAppearance.BorderColor = System.Drawing.Color.Ivory
+        Me.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSiguiente.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSiguiente.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.btnSiguiente.Location = New System.Drawing.Point(491, 273)
         Me.btnSiguiente.Name = "btnSiguiente"
         Me.btnSiguiente.Size = New System.Drawing.Size(112, 30)
         Me.btnSiguiente.TabIndex = 6
         Me.btnSiguiente.Text = "Siguiente"
-        Me.btnSiguiente.UseVisualStyleBackColor = True
+        Me.btnSiguiente.UseVisualStyleBackColor = False
         '
         'Calor_Autor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(615, 386)
+        Me.BackColor = System.Drawing.Color.Ivory
+        Me.ClientSize = New System.Drawing.Size(632, 401)
         Me.Controls.Add(Me.btnSiguiente)
         Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.Panel_MostrarEcuacion_Autores)

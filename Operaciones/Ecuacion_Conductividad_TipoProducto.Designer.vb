@@ -47,7 +47,7 @@ Partial Class Ecuacion_Conductividad_TipoProducto
         '
         'btnSalir
         '
-        Me.btnSalir.Location = New System.Drawing.Point(549, 212)
+        Me.btnSalir.Location = New System.Drawing.Point(531, 316)
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Size = New System.Drawing.Size(75, 23)
         Me.btnSalir.TabIndex = 14
@@ -56,7 +56,7 @@ Partial Class Ecuacion_Conductividad_TipoProducto
         '
         'btnVolver
         '
-        Me.btnVolver.Location = New System.Drawing.Point(549, 175)
+        Me.btnVolver.Location = New System.Drawing.Point(37, 316)
         Me.btnVolver.Name = "btnVolver"
         Me.btnVolver.Size = New System.Drawing.Size(75, 23)
         Me.btnVolver.TabIndex = 10
@@ -69,7 +69,7 @@ Partial Class Ecuacion_Conductividad_TipoProducto
         Me.Panel_foto_ecuacion.Controls.Add(Me.Foto_Ecuacion)
         Me.Panel_foto_ecuacion.Location = New System.Drawing.Point(12, 12)
         Me.Panel_foto_ecuacion.Name = "Panel_foto_ecuacion"
-        Me.Panel_foto_ecuacion.Size = New System.Drawing.Size(612, 82)
+        Me.Panel_foto_ecuacion.Size = New System.Drawing.Size(612, 132)
         Me.Panel_foto_ecuacion.TabIndex = 13
         '
         'lblObservaciones
@@ -85,7 +85,7 @@ Partial Class Ecuacion_Conductividad_TipoProducto
         '
         Me.Foto_Ecuacion.Location = New System.Drawing.Point(13, 3)
         Me.Foto_Ecuacion.Name = "Foto_Ecuacion"
-        Me.Foto_Ecuacion.Size = New System.Drawing.Size(581, 71)
+        Me.Foto_Ecuacion.Size = New System.Drawing.Size(581, 126)
         Me.Foto_Ecuacion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.Foto_Ecuacion.TabIndex = 7
         Me.Foto_Ecuacion.TabStop = False
@@ -95,7 +95,7 @@ Partial Class Ecuacion_Conductividad_TipoProducto
         Me.x.Controls.Add(Me.Label2)
         Me.x.Controls.Add(Me.txtResultado)
         Me.x.Controls.Add(Me.Label3)
-        Me.x.Location = New System.Drawing.Point(12, 225)
+        Me.x.Location = New System.Drawing.Point(76, 270)
         Me.x.Name = "x"
         Me.x.Size = New System.Drawing.Size(514, 30)
         Me.x.TabIndex = 12
@@ -135,7 +135,7 @@ Partial Class Ecuacion_Conductividad_TipoProducto
         Me.Panel_ecuacion_param.Controls.Add(Me.Btn_calcular_ecuacion)
         Me.Panel_ecuacion_param.Controls.Add(Me.lblParametro)
         Me.Panel_ecuacion_param.Controls.Add(Me.txtHumedad)
-        Me.Panel_ecuacion_param.Location = New System.Drawing.Point(12, 105)
+        Me.Panel_ecuacion_param.Location = New System.Drawing.Point(12, 150)
         Me.Panel_ecuacion_param.Name = "Panel_ecuacion_param"
         Me.Panel_ecuacion_param.Size = New System.Drawing.Size(514, 114)
         Me.Panel_ecuacion_param.TabIndex = 11
@@ -202,7 +202,7 @@ Partial Class Ecuacion_Conductividad_TipoProducto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(639, 267)
+        Me.ClientSize = New System.Drawing.Size(639, 351)
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.Panel_foto_ecuacion)
