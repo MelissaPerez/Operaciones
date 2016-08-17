@@ -39,6 +39,7 @@ Partial Class Ecuacion_Conductividad_TipoProducto
         Me.Btn_calcular_ecuacion = New System.Windows.Forms.Button()
         Me.lblParametro = New System.Windows.Forms.Label()
         Me.txtHumedad = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel_foto_ecuacion.SuspendLayout()
         CType(Me.Foto_Ecuacion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.x.SuspendLayout()
@@ -47,7 +48,9 @@ Partial Class Ecuacion_Conductividad_TipoProducto
         '
         'btnSalir
         '
-        Me.btnSalir.Location = New System.Drawing.Point(531, 316)
+        Me.btnSalir.Font = New System.Drawing.Font("Constantia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSalir.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnSalir.Location = New System.Drawing.Point(531, 339)
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Size = New System.Drawing.Size(75, 23)
         Me.btnSalir.TabIndex = 14
@@ -56,7 +59,9 @@ Partial Class Ecuacion_Conductividad_TipoProducto
         '
         'btnVolver
         '
-        Me.btnVolver.Location = New System.Drawing.Point(37, 316)
+        Me.btnVolver.Font = New System.Drawing.Font("Constantia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVolver.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnVolver.Location = New System.Drawing.Point(37, 339)
         Me.btnVolver.Name = "btnVolver"
         Me.btnVolver.Size = New System.Drawing.Size(75, 23)
         Me.btnVolver.TabIndex = 10
@@ -95,23 +100,25 @@ Partial Class Ecuacion_Conductividad_TipoProducto
         Me.x.Controls.Add(Me.Label2)
         Me.x.Controls.Add(Me.txtResultado)
         Me.x.Controls.Add(Me.Label3)
-        Me.x.Location = New System.Drawing.Point(76, 270)
+        Me.x.Location = New System.Drawing.Point(152, 299)
         Me.x.Name = "x"
-        Me.x.Size = New System.Drawing.Size(514, 30)
+        Me.x.Size = New System.Drawing.Size(339, 30)
         Me.x.TabIndex = 12
         '
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Constantia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label2.Location = New System.Drawing.Point(217, 6)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(42, 13)
+        Me.Label2.Size = New System.Drawing.Size(55, 17)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "W/m*K"
         '
         'txtResultado
         '
-        Me.txtResultado.Location = New System.Drawing.Point(101, 3)
+        Me.txtResultado.Location = New System.Drawing.Point(98, 4)
         Me.txtResultado.Name = "txtResultado"
         Me.txtResultado.ReadOnly = True
         Me.txtResultado.Size = New System.Drawing.Size(100, 20)
@@ -120,9 +127,11 @@ Partial Class Ecuacion_Conductividad_TipoProducto
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Constantia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label3.Location = New System.Drawing.Point(22, 6)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(55, 13)
+        Me.Label3.Size = New System.Drawing.Size(70, 17)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Resultado"
         '
@@ -137,12 +146,12 @@ Partial Class Ecuacion_Conductividad_TipoProducto
         Me.Panel_ecuacion_param.Controls.Add(Me.txtHumedad)
         Me.Panel_ecuacion_param.Location = New System.Drawing.Point(12, 150)
         Me.Panel_ecuacion_param.Name = "Panel_ecuacion_param"
-        Me.Panel_ecuacion_param.Size = New System.Drawing.Size(514, 114)
+        Me.Panel_ecuacion_param.Size = New System.Drawing.Size(558, 114)
         Me.Panel_ecuacion_param.TabIndex = 11
         '
         'txtTempCongelacion
         '
-        Me.txtTempCongelacion.Location = New System.Drawing.Point(249, 77)
+        Me.txtTempCongelacion.Location = New System.Drawing.Point(323, 76)
         Me.txtTempCongelacion.Name = "txtTempCongelacion"
         Me.txtTempCongelacion.Size = New System.Drawing.Size(100, 20)
         Me.txtTempCongelacion.TabIndex = 12
@@ -150,15 +159,17 @@ Partial Class Ecuacion_Conductividad_TipoProducto
         'lblTempCongelacion
         '
         Me.lblTempCongelacion.AutoSize = True
+        Me.lblTempCongelacion.Font = New System.Drawing.Font("Constantia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTempCongelacion.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblTempCongelacion.Location = New System.Drawing.Point(61, 80)
         Me.lblTempCongelacion.Name = "lblTempCongelacion"
-        Me.lblTempCongelacion.Size = New System.Drawing.Size(163, 13)
+        Me.lblTempCongelacion.Size = New System.Drawing.Size(211, 17)
         Me.lblTempCongelacion.TabIndex = 11
         Me.lblTempCongelacion.Text = "Temperatura de congelación (°C)"
         '
         'txtTemperatura
         '
-        Me.txtTemperatura.Location = New System.Drawing.Point(249, 46)
+        Me.txtTemperatura.Location = New System.Drawing.Point(323, 45)
         Me.txtTemperatura.Name = "txtTemperatura"
         Me.txtTemperatura.Size = New System.Drawing.Size(100, 20)
         Me.txtTemperatura.TabIndex = 10
@@ -166,15 +177,19 @@ Partial Class Ecuacion_Conductividad_TipoProducto
         'lblTemperatura
         '
         Me.lblTemperatura.AutoSize = True
+        Me.lblTemperatura.Font = New System.Drawing.Font("Constantia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTemperatura.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblTemperatura.Location = New System.Drawing.Point(137, 49)
         Me.lblTemperatura.Name = "lblTemperatura"
-        Me.lblTemperatura.Size = New System.Drawing.Size(87, 13)
+        Me.lblTemperatura.Size = New System.Drawing.Size(115, 17)
         Me.lblTemperatura.TabIndex = 9
         Me.lblTemperatura.Text = "Temperatura (°C)"
         '
         'Btn_calcular_ecuacion
         '
-        Me.Btn_calcular_ecuacion.Location = New System.Drawing.Point(401, 13)
+        Me.Btn_calcular_ecuacion.Font = New System.Drawing.Font("Constantia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_calcular_ecuacion.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Btn_calcular_ecuacion.Location = New System.Drawing.Point(448, 45)
         Me.Btn_calcular_ecuacion.Name = "Btn_calcular_ecuacion"
         Me.Btn_calcular_ecuacion.Size = New System.Drawing.Size(75, 23)
         Me.Btn_calcular_ecuacion.TabIndex = 8
@@ -184,25 +199,40 @@ Partial Class Ecuacion_Conductividad_TipoProducto
         'lblParametro
         '
         Me.lblParametro.AutoSize = True
-        Me.lblParametro.Location = New System.Drawing.Point(22, 16)
+        Me.lblParametro.Font = New System.Drawing.Font("Constantia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblParametro.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblParametro.Location = New System.Drawing.Point(6, 14)
         Me.lblParametro.Name = "lblParametro"
-        Me.lblParametro.Size = New System.Drawing.Size(202, 13)
+        Me.lblParametro.Size = New System.Drawing.Size(266, 17)
         Me.lblParametro.TabIndex = 1
         Me.lblParametro.Text = "Contenido de humedad (Kg/Kg producto)"
         Me.lblParametro.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'txtHumedad
         '
-        Me.txtHumedad.Location = New System.Drawing.Point(249, 13)
+        Me.txtHumedad.Location = New System.Drawing.Point(323, 12)
         Me.txtHumedad.Name = "txtHumedad"
         Me.txtHumedad.Size = New System.Drawing.Size(100, 20)
         Me.txtHumedad.TabIndex = 3
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(34, 283)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(565, 13)
+        Me.Label1.TabIndex = 15
+        Me.Label1.Text = "_________________________________________________________________________________" &
+    "____________"
         '
         'Ecuacion_Conductividad_TipoProducto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(639, 351)
+        Me.BackColor = System.Drawing.Color.Ivory
+        Me.ClientSize = New System.Drawing.Size(639, 374)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.Panel_foto_ecuacion)
@@ -218,6 +248,7 @@ Partial Class Ecuacion_Conductividad_TipoProducto
         Me.Panel_ecuacion_param.ResumeLayout(False)
         Me.Panel_ecuacion_param.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -238,4 +269,5 @@ Partial Class Ecuacion_Conductividad_TipoProducto
     Friend WithEvents lblTemperatura As Label
     Friend WithEvents txtTempCongelacion As TextBox
     Friend WithEvents lblTempCongelacion As Label
+    Friend WithEvents Label1 As Label
 End Class

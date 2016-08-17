@@ -62,7 +62,5 @@
         Me.Hide()
     End Sub
 
-    Private Sub lblImagenConductividad_Click(sender As Object, e As EventArgs) Handles lblImagenConductividad.Click
 
-    End Sub
 End Class

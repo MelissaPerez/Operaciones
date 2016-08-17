@@ -41,7 +41,7 @@ Partial Class Calor_Componente
         Me.Btn_volver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_volver.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn_volver.ForeColor = System.Drawing.Color.Olive
-        Me.Btn_volver.Location = New System.Drawing.Point(436, 183)
+        Me.Btn_volver.Location = New System.Drawing.Point(57, 186)
         Me.Btn_volver.Name = "Btn_volver"
         Me.Btn_volver.Size = New System.Drawing.Size(91, 30)
         Me.Btn_volver.TabIndex = 8
@@ -64,7 +64,7 @@ Partial Class Calor_Componente
         Me.Btn_calcular_calorcomp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_calcular_calorcomp.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn_calcular_calorcomp.ForeColor = System.Drawing.Color.White
-        Me.Btn_calcular_calorcomp.Location = New System.Drawing.Point(417, 21)
+        Me.Btn_calcular_calorcomp.Location = New System.Drawing.Point(422, 24)
         Me.Btn_calcular_calorcomp.Name = "Btn_calcular_calorcomp"
         Me.Btn_calcular_calorcomp.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Btn_calcular_calorcomp.Size = New System.Drawing.Size(91, 33)

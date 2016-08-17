@@ -46,18 +46,34 @@
 
         'Validación: Si el campo de ingreso de humedad está vacío, avisa
         If String.IsNullOrEmpty(Me.txtHumedad.Text) Then
-            Dim msg = "¡Por favor llene todos los campos. Si hay valores nulos escriba el numero: 0!"
+            If seleccion <> "Pan blanco" Then
+                Dim msg = "¡Por favor llene todos los campos. Si hay valores nulos escriba el numero: 0!"
+                MsgBox(msg)
+                Dim style = MsgBoxStyle.Critical
+                continuar = 0
+            End If
+        End If
+        If txtHumedad.Text < 0 Then
+            Dim msg = "¡Ingrese fracciones mayores o iguales a 0 !"
             MsgBox(msg)
             Dim style = MsgBoxStyle.Critical
             continuar = 0
-
+        End If
+        If txtHumedad.Text > 1 Then
+            Dim msg = "¡Ingrese fracciones menores o iguales a 1 !"
+            MsgBox(msg)
+            Dim style = MsgBoxStyle.Critical
+            continuar = 0
         End If
 
         'Validación: Si el parámetro =1 se han validado valores incorrectos en el ingreso 
         If continuar = 1 Then
 
             'Leer el valor de temperatura ingresado por el usuario
-            humedad = txtHumedad.Text
+            If seleccion <> "Pan blanco" Then
+                humedad = txtHumedad.Text
+            End If
+
 
             'Realizar cálculo de conductancia para cada producto según escogencia del usuario
             Select Case Me.seleccion
@@ -138,6 +154,25 @@
                         conductividad = -0.28 + 1.9 * humedad - 0.0092 * temperatura
                     End If
 
+                Case "Pan blanco"
+
+                    If String.IsNullOrEmpty(Me.txtTemperatura.Text) Then
+
+                        Dim msg = "¡Por favor llene todos los campos. Si hay valores nulos escriba el numero: 0!"
+                        MsgBox(msg)
+                        Dim style = MsgBoxStyle.Critical
+                        continuar = 0
+                    End If
+                    If continuar = 1 Then
+                        'convertir °C en K para la ecuación
+                        temperatura = (txtTemperatura.Text + 273)
+                        'Calcular humedad en funcion de temperatura
+                        humedad = 41.53 * (10 ^ (-0.0189 * temperatura))
+
+                        txtHumedad.Text = Format(humedad, "0.0000")
+                        txtTempCongelacion.Text = Format(225 * (10 ^ (-0.0095 * temperatura)), "0.0000")
+                        conductividad = 0.6792 - 0.0551 * humedad + 0.002 * txtTempCongelacion.Text + 0.0009 * (humedad ^ 2) - 0.000024 * humedad * txtTempCongelacion.Text
+                    End If
 
             End Select
 
@@ -182,7 +217,30 @@
                 lblParametro.Text = "Fracción másica de agua (g agua/g producto)"
                 lblTemperatura.Visible = True
                 txtTemperatura.Visible = True
+            Case "Pan blanco"
+                lblParametro.Text = "Fracción de humedad en base húmeda"
+
+                lblTemperatura.Visible = True
+                txtTemperatura.Visible = True
+                txtHumedad.Enabled = False
+                lblTempCongelacion.Visible = True
+                lblTempCongelacion.Text = "Densidad"
+                txtTempCongelacion.Enabled = False
+                txtTempCongelacion.Visible = True
+
 
         End Select
+    End Sub
+
+    Private Sub txtHumedad_TextChanged(sender As Object, e As EventArgs) Handles txtHumedad.TextChanged
+
+    End Sub
+
+    Private Sub txtTemperatura_TextChanged(sender As Object, e As EventArgs) Handles txtTemperatura.TextChanged
+
+    End Sub
+
+    Private Sub txtTempCongelacion_TextChanged(sender As Object, e As EventArgs) Handles txtTempCongelacion.TextChanged
+
     End Sub
 End Class

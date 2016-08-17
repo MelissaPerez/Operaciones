@@ -32,6 +32,7 @@ Partial Class Ecuacion_ChoiOkos
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel_ecuacion_param = New System.Windows.Forms.Panel()
         Me.Btn_calcular_ecuacion = New System.Windows.Forms.Button()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtTemperatura = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -49,7 +50,6 @@ Partial Class Ecuacion_ChoiOkos
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
         Me.Panel_foto_ecuacion.SuspendLayout()
         CType(Me.Foto_Ecuacion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.x.SuspendLayout()
@@ -119,9 +119,9 @@ Partial Class Ecuacion_ChoiOkos
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label2.Location = New System.Drawing.Point(329, 22)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(34, 17)
+        Me.Label2.Size = New System.Drawing.Size(49, 17)
         Me.Label2.TabIndex = 2
-        Me.Label2.Text = "J/Kg"
+        Me.Label2.Text = "J/Kg*K"
         '
         'txtResultado
         '
@@ -168,6 +168,17 @@ Partial Class Ecuacion_ChoiOkos
         Me.Btn_calcular_ecuacion.TabIndex = 8
         Me.Btn_calcular_ecuacion.Text = "Calcular"
         Me.Btn_calcular_ecuacion.UseVisualStyleBackColor = False
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Constantia", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.Black
+        Me.Label11.Location = New System.Drawing.Point(340, 106)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(167, 14)
+        Me.Label11.TabIndex = 14
+        Me.Label11.Text = "*Ingresar decimales con coma "
         '
         'Label1
         '
@@ -354,17 +365,6 @@ Partial Class Ecuacion_ChoiOkos
         Me.Label12.TabIndex = 16
         Me.Label12.Text = "_________________________________________________________________________________" &
     ""
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Constantia", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.ForeColor = System.Drawing.Color.Black
-        Me.Label11.Location = New System.Drawing.Point(340, 106)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(167, 14)
-        Me.Label11.TabIndex = 14
-        Me.Label11.Text = "*Ingresar decimales con coma "
         '
         'Ecuacion_ChoiOkos
         '

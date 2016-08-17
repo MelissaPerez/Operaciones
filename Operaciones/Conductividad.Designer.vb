@@ -37,6 +37,11 @@ Partial Class Conductividad
         '
         'btnVolver
         '
+        Me.btnVolver.FlatAppearance.BorderColor = System.Drawing.Color.Olive
+        Me.btnVolver.FlatAppearance.BorderSize = 2
+        Me.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnVolver.Font = New System.Drawing.Font("Constantia", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVolver.ForeColor = System.Drawing.Color.Olive
         Me.btnVolver.Location = New System.Drawing.Point(61, 286)
         Me.btnVolver.Name = "btnVolver"
         Me.btnVolver.Size = New System.Drawing.Size(97, 31)
@@ -84,35 +89,43 @@ Partial Class Conductividad
         '
         'cmbConductividad
         '
+        Me.cmbConductividad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbConductividad.Font = New System.Drawing.Font("Constantia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbConductividad.FormattingEnabled = True
-        Me.cmbConductividad.Items.AddRange(New Object() {"Remolacha", "Zanahoria", "Perejil", "Apio", "Uva pasa", "Papaya", "Melón", "Manzana", "Pera", "Zumo de frutas (fraccion agua)", "Zumo de frutas (fraccion agua, temperatura, temp. congelacion)", "Carne molida", "Carnes (fraccion agua)", "Carnes (fraccion agua, temperatura)", "Surimi", "Pan blanco", "Pasta de trigo", "Papa (fraccion de agua)", "Papa (base seca)", "Papa (base seca, rango temperatura)"})
-        Me.cmbConductividad.Location = New System.Drawing.Point(77, 27)
+        Me.cmbConductividad.Items.AddRange(New Object() {"Remolacha", "Zanahoria", "Perejil", "Apio", "Uva pasa", "Papaya", "Melón", "Manzana", "Pera", "Zumo de frutas (fraccion agua)", "Zumo de frutas (fraccion agua, temperatura, temp. congelacion)", "Carne molida", "Carnes (fraccion agua)", "Carnes (fraccion agua, temperatura)", "Surimi", "Pan blanco"})
+        Me.cmbConductividad.Location = New System.Drawing.Point(99, 42)
         Me.cmbConductividad.Name = "cmbConductividad"
-        Me.cmbConductividad.Size = New System.Drawing.Size(304, 21)
+        Me.cmbConductividad.Size = New System.Drawing.Size(304, 23)
         Me.cmbConductividad.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Constantia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(36, 11)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(130, 13)
+        Me.Label1.Size = New System.Drawing.Size(170, 17)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Escoja el tipo de producto"
         '
         'btnSiguiente
         '
-        Me.btnSiguiente.Location = New System.Drawing.Point(505, 286)
+        Me.btnSiguiente.BackColor = System.Drawing.Color.Olive
+        Me.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSiguiente.Font = New System.Drawing.Font("Constantia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSiguiente.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnSiguiente.Location = New System.Drawing.Point(473, 287)
         Me.btnSiguiente.Name = "btnSiguiente"
         Me.btnSiguiente.Size = New System.Drawing.Size(97, 28)
         Me.btnSiguiente.TabIndex = 8
         Me.btnSiguiente.Text = "Siguiente"
-        Me.btnSiguiente.UseVisualStyleBackColor = True
+        Me.btnSiguiente.UseVisualStyleBackColor = False
         '
         'Conductividad
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Ivory
         Me.ClientSize = New System.Drawing.Size(625, 329)
         Me.Controls.Add(Me.btnSiguiente)
         Me.Controls.Add(Me.btnVolver)

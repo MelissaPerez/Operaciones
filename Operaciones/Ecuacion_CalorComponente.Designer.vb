@@ -101,9 +101,9 @@ Partial Class Ecuacion_CalorComponente
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label2.Location = New System.Drawing.Point(282, 25)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(32, 15)
+        Me.Label2.Size = New System.Drawing.Size(47, 15)
         Me.Label2.TabIndex = 2
-        Me.Label2.Text = "J/Kg"
+        Me.Label2.Text = "J/Kg*K"
         '
         'txtResultado
         '

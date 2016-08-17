@@ -1,13 +1,11 @@
 ﻿Public Class Calor_TipoProducto
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-
-    End Sub
+    Dim seleccion As String
 
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel_TipoProducto.Paint
 
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles Foto_Ecuacion.Click
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -18,7 +16,14 @@
         Me.Hide()
     End Sub
 
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbTipoProducto.SelectedIndexChanged
+        seleccion = cmbTipoProducto.SelectedItem
+    End Sub
 
+    Private Sub btnSiguiente_Click(sender As Object, e As EventArgs) Handles btnSiguiente.Click
+        Dim oForm As Ecuacion_ChoiOkos
+        oForm = New Ecuacion_ChoiOkos(seleccion)
+        oForm.Show()
+        Me.Hide()
     End Sub
 End Class

@@ -111,5 +111,75 @@
         Me.Close()
     End Sub
 
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
+        'si el susuario escoge calcular calor específico por tipo de producto, los valores de las
+        'composiciones son predeterminadas
+
+        If seleccion = "Leche de coco" Or
+                seleccion = "Carne de res" Or
+                seleccion = "Pechuga de pollo" Or
+                seleccion = "Manzana con piel" Or
+                seleccion = "Banano" Or
+                seleccion = "Mango" Then
+
+            Me.txtCarbohidratos.Enabled = False
+            Me.txtProteina.Enabled = False
+            Me.txtGrasa.Enabled = False
+            Me.txtCeniza.Enabled = False
+            Me.txtHumedad.Enabled = False
+            Me.txtFibra.Enabled = False
+
+        End If
+
+
+        If seleccion = "Leche de coco" Then
+            Me.txtCarbohidratos.Text = 0.012
+            Me.txtProteina.Text = 0.021
+            Me.txtGrasa.Text = 0.217
+            Me.txtCeniza.Text = 0.008
+            Me.txtHumedad.Text = 0.72
+            Me.txtFibra.Text = 0.022
+        End If
+        If seleccion = "Carne de res" Then
+            Me.txtCarbohidratos.Text = 0.0
+            Me.txtProteina.Text = 0.207
+            Me.txtGrasa.Text = 0.023
+            Me.txtCeniza.Text = 0.01
+            Me.txtHumedad.Text = 0.76
+            Me.txtFibra.Text = 0.0
+        End If
+        If seleccion = "Pechuga de pollo" Then
+            Me.txtCarbohidratos.Text = 0.0
+            Me.txtProteina.Text = 0.223
+            Me.txtGrasa.Text = 0.018
+            Me.txtCeniza.Text = 0.011
+            Me.txtHumedad.Text = 0.729
+            Me.txtFibra.Text = 0.0
+        End If
+        If seleccion = "Manzana con piel" Then
+            Me.txtCarbohidratos.Text = 0.135
+            Me.txtProteina.Text = 0.003
+            Me.txtGrasa.Text = 0.002
+            Me.txtCeniza.Text = 0.002
+            Me.txtHumedad.Text = 0.833
+            Me.txtFibra.Text = 0.024
+        End If
+        If seleccion = "Banano" Then
+            Me.txtCarbohidratos.Text = 0.192
+            Me.txtProteina.Text = 0.013
+            Me.txtGrasa.Text = 0.008
+            Me.txtCeniza.Text = 0.008
+            Me.txtHumedad.Text = 0.752
+            Me.txtFibra.Text = 0.026
+        End If
+        If seleccion = "Mango" Then
+            Me.txtCarbohidratos.Text = 0.18
+            Me.txtProteina.Text = 0.008
+            Me.txtGrasa.Text = 0.004
+            Me.txtCeniza.Text = 0.008
+            Me.txtHumedad.Text = 0.784
+            Me.txtFibra.Text = 0.016
+        End If
+    End Sub
 End Class

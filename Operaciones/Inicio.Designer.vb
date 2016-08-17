@@ -44,7 +44,7 @@ Partial Class Inicio
         Me.Btn_calor.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Btn_calor.Location = New System.Drawing.Point(72, 114)
         Me.Btn_calor.Name = "Btn_calor"
-        Me.Btn_calor.Size = New System.Drawing.Size(136, 34)
+        Me.Btn_calor.Size = New System.Drawing.Size(157, 34)
         Me.Btn_calor.TabIndex = 0
         Me.Btn_calor.Text = "Calor específico"
         Me.Btn_calor.UseVisualStyleBackColor = False
