@@ -5,8 +5,6 @@
     Dim seleccion As String
 
     Private Sub Panel_MostrarEcuacion_Componentes_Paint() Handles Panel_MostrarEcuacion_Componentes.Paint
-        'que pasa si quito parametros?
-        'Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
         If visiblePanel = 0 Then
             Panel_MostrarEcuacion_Componentes.Visible = False
@@ -19,7 +17,8 @@
     Private Sub Cmb_calor_autor_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Cmb_calor_componente.SelectedIndexChanged
 
         seleccion = Cmb_calor_componente.SelectedItem
-        Foto_Ecuacion.Image = System.Drawing.Bitmap.FromFile("..\..\Imagenes\" + seleccion + ".PNG")
+
+        Foto_Ecuacion.Image = Inicio.GetImgResource(seleccion)
         visiblePanel = 1
         Me.Panel_MostrarEcuacion_Componentes_Paint()
 

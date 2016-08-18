@@ -1,4 +1,9 @@
-﻿Public Class Ecuacion_ChoiOkos
+﻿Imports System.IO
+Imports System.Net
+Imports System.Net.WebRequestMethods
+Imports System.Drawing
+
+Public Class Ecuacion_ChoiOkos
 
     Dim seleccion As String
 
@@ -7,8 +12,9 @@
         InitializeComponent()
 
         If seleccion <> "" Then
-            Foto_Ecuacion.Image = System.Drawing.Bitmap.FromFile("..\..\Imagenes\ChoiOkos.PNG")
+            Foto_Ecuacion.Image = My.Resources.ChoiOkos
         End If
+
 
     End Sub
 
@@ -57,12 +63,19 @@
 
             'Validación: que la suma de las fracciones no sea mayor a 1
 
-        ElseIf Convert.ToDouble(Me.txtCarbohidratos.Text) + Convert.ToDouble(Me.txtProteina.Text) + Convert.ToDouble(Me.txtGrasa.Text) + Convert.ToDouble(Me.txtCeniza.Text) + Convert.ToDouble(Me.txtFibra.Text) < 0 Or +Convert.ToDouble(Me.txtHumedad.Text) > 1 Then
+        ElseIf Convert.ToDouble(Me.txtCarbohidratos.Text) + Convert.ToDouble(Me.txtProteina.Text) + Convert.ToDouble(Me.txtGrasa.Text) + Convert.ToDouble(Me.txtCeniza.Text) + Convert.ToDouble(Me.txtFibra.Text) + Convert.ToDouble(Me.txtHumedad.Text) > 1 Then
 
             Dim msg = "¡La suma de las fracciones debe ser mayor a 0 e igual a 1!"
             MsgBox(msg)
             Dim style = MsgBoxStyle.Critical
 
+            Console.WriteLine(Convert.ToDouble(Me.txtCarbohidratos.Text) + Convert.ToDouble(Me.txtProteina.Text) + Convert.ToDouble(Me.txtGrasa.Text) + Convert.ToDouble(Me.txtCeniza.Text) + Convert.ToDouble(Me.txtFibra.Text) Or +Convert.ToDouble(Me.txtHumedad.Text))
+
+        ElseIf Convert.ToDouble(Me.txtCarbohidratos.Text) + Convert.ToDouble(Me.txtProteina.Text) + Convert.ToDouble(Me.txtGrasa.Text) + Convert.ToDouble(Me.txtCeniza.Text) + Convert.ToDouble(Me.txtFibra.Text) + Convert.ToDouble(Me.txtHumedad.Text) < 1 Then
+
+            Dim msg = "¡La suma de las fracciones debe ser mayor a 0 e igual a 1!"
+            MsgBox(msg)
+            Dim style = MsgBoxStyle.Critical
             ''''''Cálculo: 
 
         Else
@@ -153,7 +166,7 @@
             Me.txtCarbohidratos.Text = 0.0
             Me.txtProteina.Text = 0.223
             Me.txtGrasa.Text = 0.018
-            Me.txtCeniza.Text = 0.011
+            Me.txtCeniza.Text = 0.03
             Me.txtHumedad.Text = 0.729
             Me.txtFibra.Text = 0.0
         End If
@@ -161,7 +174,7 @@
             Me.txtCarbohidratos.Text = 0.135
             Me.txtProteina.Text = 0.003
             Me.txtGrasa.Text = 0.002
-            Me.txtCeniza.Text = 0.002
+            Me.txtCeniza.Text = 0.003
             Me.txtHumedad.Text = 0.833
             Me.txtFibra.Text = 0.024
         End If
@@ -169,7 +182,7 @@
             Me.txtCarbohidratos.Text = 0.192
             Me.txtProteina.Text = 0.013
             Me.txtGrasa.Text = 0.008
-            Me.txtCeniza.Text = 0.008
+            Me.txtCeniza.Text = 0.009
             Me.txtHumedad.Text = 0.752
             Me.txtFibra.Text = 0.026
         End If

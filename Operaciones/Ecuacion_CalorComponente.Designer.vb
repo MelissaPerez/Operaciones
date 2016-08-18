@@ -187,6 +187,7 @@ Partial Class Ecuacion_CalorComponente
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Ivory
         Me.ClientSize = New System.Drawing.Size(613, 309)
+        Me.ControlBox = False
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.Panel_foto_ecuacion)

@@ -48,7 +48,7 @@ Partial Class Calor_TipoProducto
         Me.cmbTipoProducto.Font = New System.Drawing.Font("Constantia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbTipoProducto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.cmbTipoProducto.FormattingEnabled = True
-        Me.cmbTipoProducto.Items.AddRange(New Object() {"Leche de coco", "Carne de res", "Pechuga de pollo", "Manzana con piel", "Banano", "Mango "})
+        Me.cmbTipoProducto.Items.AddRange(New Object() {"Leche de coco", "Carne de res", "Pechuga de pollo", "Manzana con piel", "Banano", "Mango"})
         Me.cmbTipoProducto.Location = New System.Drawing.Point(138, 34)
         Me.cmbTipoProducto.Name = "cmbTipoProducto"
         Me.cmbTipoProducto.Size = New System.Drawing.Size(304, 23)
@@ -96,6 +96,7 @@ Partial Class Calor_TipoProducto
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Ivory
         Me.ClientSize = New System.Drawing.Size(614, 177)
+        Me.ControlBox = False
         Me.Controls.Add(Me.btnSiguiente)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel_TipoProducto)

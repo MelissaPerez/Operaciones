@@ -8,8 +8,8 @@ Public Class Ecuacion_CalorComponente
     Sub New(ByVal image As String)
         Me.seleccion = image
         InitializeComponent()
-        Console.WriteLine(My.Application.Info.DirectoryPath)
-        Foto_Ecuacion.Image = System.Drawing.Bitmap.FromFile("..\..\Imagenes\" + seleccion + ".PNG")
+        Foto_Ecuacion.Image = Inicio.GetImgResource(image)
+
 
     End Sub
 

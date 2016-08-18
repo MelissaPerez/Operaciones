@@ -182,6 +182,84 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\ChoiOkos.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Hielo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Lípidos.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Agua0150.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Agua400.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Apio.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Carbohidratos.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\CarneMolida.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\CarnesFa.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\CarnesFaT.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Cenizas.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Lipidos.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Manzana.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\PanBlanco.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Papaya.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Pera.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Perejil.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Proteina.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Remolacha.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Surimi.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Zanahoria.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\ZumoFrutasFa.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\ZumoFrutasFaTTc.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Melon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\UvaPasa.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

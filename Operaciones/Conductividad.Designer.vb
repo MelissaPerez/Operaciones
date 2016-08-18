@@ -90,7 +90,9 @@ Partial Class Conductividad
         'cmbConductividad
         '
         Me.cmbConductividad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbConductividad.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.cmbConductividad.Font = New System.Drawing.Font("Constantia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbConductividad.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.cmbConductividad.FormattingEnabled = True
         Me.cmbConductividad.Items.AddRange(New Object() {"Remolacha", "Zanahoria", "Perejil", "Apio", "Uva pasa", "Papaya", "Melón", "Manzana", "Pera", "Zumo de frutas (fraccion agua)", "Zumo de frutas (fraccion agua, temperatura, temp. congelacion)", "Carne molida", "Carnes (fraccion agua)", "Carnes (fraccion agua, temperatura)", "Surimi", "Pan blanco"})
         Me.cmbConductividad.Location = New System.Drawing.Point(99, 42)
@@ -102,6 +104,7 @@ Partial Class Conductividad
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Constantia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(36, 11)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(170, 17)
@@ -127,6 +130,7 @@ Partial Class Conductividad
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Ivory
         Me.ClientSize = New System.Drawing.Size(625, 329)
+        Me.ControlBox = False
         Me.Controls.Add(Me.btnSiguiente)
         Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.Panel_MostrarEcuacion_Conductividad)

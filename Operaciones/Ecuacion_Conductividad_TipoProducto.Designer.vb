@@ -32,6 +32,7 @@ Partial Class Ecuacion_Conductividad_TipoProducto
         Me.txtResultado = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel_ecuacion_param = New System.Windows.Forms.Panel()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.txtTempCongelacion = New System.Windows.Forms.TextBox()
         Me.lblTempCongelacion = New System.Windows.Forms.Label()
         Me.txtTemperatura = New System.Windows.Forms.TextBox()
@@ -40,7 +41,6 @@ Partial Class Ecuacion_Conductividad_TipoProducto
         Me.lblParametro = New System.Windows.Forms.Label()
         Me.txtHumedad = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel_foto_ecuacion.SuspendLayout()
         CType(Me.Foto_Ecuacion, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -170,6 +170,18 @@ Partial Class Ecuacion_Conductividad_TipoProducto
         Me.Panel_ecuacion_param.TabIndex = 11
         Me.Panel_ecuacion_param.UseWaitCursor = True
         '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Constantia", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.Black
+        Me.Label11.Location = New System.Drawing.Point(420, 116)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(167, 14)
+        Me.Label11.TabIndex = 15
+        Me.Label11.Text = "*Ingresar decimales con coma "
+        Me.Label11.UseWaitCursor = True
+        '
         'txtTempCongelacion
         '
         Me.txtTempCongelacion.Location = New System.Drawing.Point(323, 76)
@@ -257,17 +269,6 @@ Partial Class Ecuacion_Conductividad_TipoProducto
     "____________"
         Me.Label1.UseWaitCursor = True
         '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Constantia", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.ForeColor = System.Drawing.Color.Black
-        Me.Label11.Location = New System.Drawing.Point(420, 116)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(167, 14)
-        Me.Label11.TabIndex = 15
-        Me.Label11.Text = "*Ingresar decimales con coma "
-        '
         'Label4
         '
         Me.Label4.AutoSize = True
@@ -278,6 +279,7 @@ Partial Class Ecuacion_Conductividad_TipoProducto
         Me.Label4.Size = New System.Drawing.Size(167, 14)
         Me.Label4.TabIndex = 16
         Me.Label4.Text = "*Ingresar decimales con coma "
+        Me.Label4.UseWaitCursor = True
         '
         'Ecuacion_Conductividad_TipoProducto
         '
@@ -285,6 +287,7 @@ Partial Class Ecuacion_Conductividad_TipoProducto
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Ivory
         Me.ClientSize = New System.Drawing.Size(639, 402)
+        Me.ControlBox = False
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnSalir)

@@ -119,6 +119,7 @@ Partial Class Calor_Componente
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Ivory
         Me.ClientSize = New System.Drawing.Size(577, 228)
+        Me.ControlBox = False
         Me.Controls.Add(Me.Btn_volver)
         Me.Controls.Add(Me.Panel_MostrarEcuacion_Componentes)
         Me.Controls.Add(Me.Panel_calor_autor)

@@ -374,6 +374,7 @@ Partial Class Ecuacion_ChoiOkos
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.Ivory
         Me.ClientSize = New System.Drawing.Size(545, 606)
+        Me.ControlBox = False
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.btnVolver)

@@ -13,7 +13,7 @@
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbConductividad.SelectedIndexChanged
         seleccion = cmbConductividad.SelectedItem
-        Foto_Ecuacion.Image = System.Drawing.Bitmap.FromFile("..\..\Imagenes\" + seleccion + ".PNG")
+        Foto_Ecuacion.Image = Inicio.GetImgResource(seleccion)
         visiblePanel = 1
         Me.Panel_MostrarEcuacion_Conductividad_Paint()
 

@@ -14,7 +14,7 @@
         txtTempCongelacion.Visible = False
 
         'Ruta de la imagen
-        Foto_Ecuacion.Image = System.Drawing.Bitmap.FromFile("..\..\Imagenes\" + seleccion + ".PNG")
+        Foto_Ecuacion.Image = Inicio.GetImgResource(seleccion)
 
     End Sub
 
@@ -53,18 +53,32 @@
                 continuar = 0
             End If
         End If
-        If txtHumedad.Text < 0 Then
-            Dim msg = "¡Ingrese fracciones mayores o iguales a 0 !"
-            MsgBox(msg)
-            Dim style = MsgBoxStyle.Critical
-            continuar = 0
+        If seleccion = "Pan blanco" Then
+            If String.IsNullOrEmpty(Me.txtTemperatura.Text) Then
+                Dim msg = "¡Por favor llene todos los campos. Si hay valores nulos escriba el numero: 0!"
+                MsgBox(msg)
+                Dim style = MsgBoxStyle.Critical
+                continuar = 0
+            End If
         End If
-        If txtHumedad.Text > 1 Then
-            Dim msg = "¡Ingrese fracciones menores o iguales a 1 !"
-            MsgBox(msg)
-            Dim style = MsgBoxStyle.Critical
-            continuar = 0
-        End If
+        If seleccion <> "Pan blanco" Then
+            If String.IsNullOrEmpty(Me.txtHumedad.Text) Then
+                continuar = 0
+
+            ElseIf Me.txtHumedad.Text < 0 Then
+                Dim msg = "¡Ingrese fracciones mayores o iguales a 0 !"
+                MsgBox(msg)
+                Dim style = MsgBoxStyle.Critical
+                continuar = 0
+
+
+            ElseIf txtHumedad.Text > 1 Then
+                Dim msg = "¡Ingrese fracciones menores o iguales a 1 !"
+                    MsgBox(msg)
+                    Dim style = MsgBoxStyle.Critical
+                    continuar = 0
+                End If
+            End If
 
         'Validación: Si el parámetro =1 se han validado valores incorrectos en el ingreso 
         If continuar = 1 Then
